@@ -1,0 +1,182 @@
+/* Reseteo márgenes browser y color body */
+/*font-family: 'Didact Gothic', sans-serif;*/
+/*color: #1DA1F2;*/
+
+body {
+	margin: 0 auto;
+	background-color: #E6ECF0;
+	font-family: 'Didact Gothic', sans-serif;
+	color: #000;
+	font-size: 14px;
+}
+
+header {
+	background-color: #FFF;
+	height: 60px;
+	width: 100%;
+	border-bottom: 2px solid #C9CED2;
+	position: fixed;
+}
+
+header nav {
+	float: left;
+}
+
+header ul {
+	margin: 0 auto;
+}
+
+header li {
+	float: left;
+	padding: 0 10px;
+	list-style: none;
+	line-height: 60px;
+	margin-top: 0;
+}
+
+header li:hover {
+	border-bottom: 2px solid #1DA1F2;
+}
+
+header li a {
+	color: #6B696C;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+header li:hover > a {
+	color: #1DA1F2;
+}
+
+header li .fa {
+	font-size: 19px;
+	margin-right: 5px;
+}
+
+header .fa-twitter {
+	font-size: 35px;
+	color: #00CDFF;
+	float: left;
+	margin-left: 42%;
+	margin-top: 10px;
+}
+
+header a #twitter-logo {
+	background-image: url(../img/Twitter-logo.png);
+	background-size: cover;
+	width: 129px;
+	height: 35px;
+	z-index: 100;
+	margin: 0 auto;
+	margin-top: 5px;
+	position: relative;
+}
+
+.reto-codigo {
+	text-align: left;
+	margin-top: 70px;
+	width: 40%;
+	float: left;
+	margin-left: 9%;
+}
+
+.reto-codigo .container {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 60px 30px;
+	line-height: 30px;
+}
+
+.center {
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: left;
+	margin-top: 70px;
+	margin-left: 2%;
+	width: 40%;
+	height: 220px;
+	float: left;
+}
+
+.center .container {
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px 10px;
+}
+
+textarea {
+	width: 98%;
+	height: 80px;
+	color: #4E4D53;
+	font-size: 14px;
+	padding-top: 10px;
+	border-radius: 5px;
+	border: none;
+	margin: 0 auto;
+}
+
+.center hr {
+	border: 1.5px solid #1DA1F2;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* Estilos botón agregar */
+#btn {
+	background-color: #1DA1F2;
+	border: 0px;
+	border-radius: 7px;
+	cursor: pointer;
+	text-align: center;
+	margin:  auto;
+	line-height: 35px;
+	width: 100px;
+	display: block;
+	color: #FFF;
+	float: left;
+	margin-top: 15px;
+}
+
+#btn:focus, textarea:focus{
+	outline: none;
+}
+
+#contador {
+	color: #1DA1F2;
+	font-weight: bold;
+	font-size: 16px;
+	float: right;
+	margin-top: 45px;
+}
+
+/* Estilos contenedor comentarios */
+ #cont {
+	width: 90%;
+	color: #4E4D53;
+	text-align: left;
+	display: block;
+	float: left;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+#cont div {
+	padding: 20px 10px;
+	margin-bottom: 30px;
+	outline: 1.5px solid #E5E3F2;
+	background-color: #FFF;
+	border-radius: 5px;
+}
+
+#cont #time {
+	padding: 20px 10px;
+	margin-bottom: 30px;
+	color: black;
+}
+
+p {
+	display: inline-block;
+	margin-left: 10px;
+}

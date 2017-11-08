@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name = "viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<script src="https://use.fontawesome.com/2ce8081ca7.js"></script>
+	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/it/0/09/Twitter_bird_logo.png" rel='shortcut icon' type='image/png'>
+	<title>Twitter</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://use.fontawesome.com/7873633050.js"></script>
+</head>
+<body>
+<!-- Sección header -->
+	<header id="header">
+		<nav>
+			<ul>
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a></li>
+				<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</a></li>
+				<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Mensajes</a></li>
+			</ul>
+		</nav>
+		<i class="fa fa-twitter" aria-hidden="true"></i>
+		<a href="#header"><div id="twitter-logo"></div></a>
+	</header>
+
+<section class="reto-codigo">
+	<div class="container">
+		<h3>Reto de Código</h3>
+		Hola :) <br>Soy Natalia Campos, una front-end developer
+	</div>
+</section>
+	<!-- Sección textarea, botón y contenedor mensajes -->
+	<section class="center">
+		<div class="container">
+			<textarea type="text" id="comment" placeholder="¿Qué está pasando?"></textarea>
+      <hr>
+			<button type="button" id="btn" onclick="add()" >TWEET</button>
+			<div id="contador" src="wourdcount"></div>
+		</div>
+	</section>
+	<!-- contenedor comentarios -->
+		<div id="cont">
+		</div>
+
+	<!-- Script Files -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
