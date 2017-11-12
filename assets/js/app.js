@@ -21,16 +21,16 @@ function add(){
 	textbox.type = 'text';
 
 	//crear contador de palabras
-	/*function wordCount(){
-		var words = document.getElementById('contador').value;
-		var count = words.length();
-
+	var paragraph = document.getElementById('comment').value;
+	var count = paragraph.length();
+	function wordCount(){
 		if ( count === 0 || count === ""){
 			return ("140");
-		} else ( 1 >= count >= 139 ) {
+		} else ( 1 <= count <= 139 ) {
 			return (count);
 		}
-}*/
+
+	contador.appendChild(count);
 
 	//nodos de texto del textarea
 	var textNewComment = document.createTextNode(comments);

@@ -58,7 +58,7 @@ header .fa-twitter {
 	font-size: 35px;
 	color: #00CDFF;
 	float: left;
-	margin-left: 42%;
+	margin-left: 13%;
 	margin-top: 10px;
 }
 
@@ -74,6 +74,10 @@ header a #twitter-logo {
 }
 
 .reto-codigo {
+	height: 225px;
+	width: 40%;
+	background-color: #fff;
+	border-radius: 5px;
 	text-align: left;
 	margin-top: 70px;
 	width: 40%;
@@ -81,11 +85,41 @@ header a #twitter-logo {
 	margin-left: 9%;
 }
 
-.reto-codigo .container {
-	background-color: #fff;
+.reto-codigo #my-picture {
+	background-image: url(../img/joli.jpg);
+	background-size: cover;
 	border-radius: 5px;
-	padding: 60px 30px;
-	line-height: 30px;
+	width: 180px;
+	height: 200px;
+	z-index: 1000;
+	margin-left: 3%;
+	margin-top: 12px;
+	float: left;
+}
+
+.reto-codigo .container {
+	margin-top: 40px;
+}
+
+.reto-codigo .container h3 {
+	display: inline;
+	margin-left: 3%;
+	margin-top: 12px;
+	position: relative;
+}
+
+.reto-codigo .container p {
+	line-height: 20px;
+	margin-right: 3%;
+	margin-top: 15px;
+	width: 55%;
+	float: right;
+}
+
+.reto-codigo .container p a {
+	color: #1DA1F2;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .center {
@@ -95,7 +129,7 @@ header a #twitter-logo {
 	margin-top: 70px;
 	margin-left: 2%;
 	width: 40%;
-	height: 220px;
+	height: 220px auto;
 	float: left;
 }
 
@@ -106,19 +140,27 @@ header a #twitter-logo {
 	padding: 10px 10px;
 }
 
-textarea {
+.center > #comment {
+	height: auto;
+	resize: vertical;
+}
+
+.center .container #comment {
 	width: 98%;
-	height: 80px;
+	min-height: 120px;
 	color: #4E4D53;
 	font-size: 14px;
 	padding-top: 10px;
 	border-radius: 5px;
 	border: none;
 	margin: 0 auto;
+	resize: vertical;
+	flex-direction: column;
 }
 
 .center hr {
 	border: 1.5px solid #1DA1F2;
+	background-color: #1DA1F2;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
@@ -136,7 +178,7 @@ textarea {
 	display: block;
 	color: #FFF;
 	float: left;
-	margin-top: 15px;
+	margin-top: 0px;
 }
 
 #btn:focus, textarea:focus{
@@ -148,7 +190,8 @@ textarea {
 	font-weight: bold;
 	font-size: 16px;
 	float: right;
-	margin-top: 45px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 /* Estilos contenedor comentarios */
