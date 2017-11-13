@@ -179,19 +179,19 @@ header a #twitter-logo {
 	color: #FFF;
 	float: left;
 	margin-top: 0px;
+	margin-bottom: 15px;
 }
 
 #btn:focus, textarea:focus{
 	outline: none;
 }
 
-#contador {
+#counter-characters {
 	color: #1DA1F2;
 	font-weight: bold;
 	font-size: 16px;
 	float: right;
 	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 /* Estilos contenedor comentarios */

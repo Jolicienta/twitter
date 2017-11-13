@@ -20,18 +20,6 @@ function add(){
 	var textbox = document.createElement('text');
 	textbox.type = 'text';
 
-	//crear contador de palabras
-	var paragraph = document.getElementById('comment').value;
-	var count = paragraph.length();
-	function wordCount(){
-		if ( count === 0 || count === ""){
-			return ("140");
-		} else ( 1 <= count <= 139 ) {
-			return (count);
-		}
-
-	contador.appendChild(count);
-
 	//nodos de texto del textarea
 	var textNewComment = document.createTextNode(comments);
 	var contenedorElemento = document.createElement('p');
@@ -40,15 +28,20 @@ function add(){
 	newComments.appendChild(textbox);
 	newComments.appendChild(contenedorElemento);
 	cont.appendChild(newComments);
+}
 
+var comments = document.getElementById('comment');
+comments.onkeydown = function(){
+	//tenemos que tomar el texto ingresado en el textarea
+	var comments = document.getElementById('comment').value;
+	var numChars = comments.length;
+	var counter = document.getElementById('counter-characters');
+	var charLeft = 140 - numChars;
+  counter.innerHTML = charLeft;
 
-
-
-
-
-
-
-
-
-
+	if ( numChars >= 90 ){
+		document.getElementById("counter-characters").style.color = "maroon";
+	} else if (numChars >= 120){
+		document.getElementById("counter-characters").style.color = "crimson"
+	}
 }
